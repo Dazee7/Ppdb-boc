@@ -10,27 +10,35 @@ body {
 }
 
 .container {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
   background: rgba(0,0,0,0.6);
-  padding: 25px;
-  border-radius: 10px;
-  width: 300px;
+  padding: 40px;
+  border-radius: 14px;
+  width: 380px;        /* ⬅️ diperbesar */
   text-align: center;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
 input, select {
   width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 6px;
+  padding: 14px;       /* ⬅️ lebih tinggi */
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
   border: none;
 }
 
 button {
   width: 100%;
-  padding: 10px;
+  padding: 14px;
+  font-size: 16px;
   background: #00c853;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
 }
@@ -52,4 +60,11 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
 }
