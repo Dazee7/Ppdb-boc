@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(135deg, #141e30, #243b55);
   font-family: Arial;
@@ -10,37 +14,32 @@ body {
 }
 
 .container {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  background: rgba(0,0,0,0.6);
-  padding: 40px;
-  border-radius: 14px;
-  width: 380px;        /* ⬅️ diperbesar */
+  background: rgba(0, 0, 0, 0.75);
+  padding: 45px;
+  border-radius: 16px;
+  width: 420px;              /* ⬅️ lebih besar */
+  max-width: 95%;            /* ⬅️ aman di HP */
   text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
 }
 
 h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 
-input, select {
+input, select, button {
   width: 100%;
-  padding: 14px;       /* ⬅️ lebih tinggi */
-  margin: 10px 0;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 16px;             /* ⬅️ sama semua */
+  margin: 12px 0;
+  border-radius: 10px;
+  font-size: 17px;
   border: none;
 }
 
 button {
-  width: 100%;
-  padding: 14px;
-  font-size: 16px;
-  background: #00c853;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
+  background: linear-gradient(135deg, #00c853, #00a843);
+  font-weight: bold;
 }
 
 button:hover {
